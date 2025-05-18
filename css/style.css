@@ -2,7 +2,7 @@
 body {
   font-size: 16px;
   line-height: 1.35;
-  font-family: 'Pt-Sans-Regular';
+  font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   color: #3C4959;
   background-color: #FDFDFD;
@@ -19,6 +19,7 @@ body {
   align-items: center;
   background-color: #E6F6FE;  
   margin-top: 40px;
+  margin-bottom: 60px;
   padding: 18px 41px;
   border-radius: 10px;
 }
@@ -45,4 +46,30 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-weight: 600;
   line-height: 155%;
+}
+
+/* Home style */
+.home__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__info-title {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 62px;
+  font-weight: 600;
+  letter-spacing: -2%;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #011632;
+}
+.home__info-title::after{
+  content: '';
+  position: absolute;
+  background-image: url(../images/h1-liner.svg);
+  width: 533px;
+  height: 10px;
+  bottom: 0;
+  left: 1px;
 }
